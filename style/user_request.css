@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.4s;
+    font-family: 'Roboto', sans-serif;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover{
+    color: white;
+  }
+  li {
+    list-style: none;
+  }
+  .all-btn {
+    padding: 10px;
+    background: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .request-number {
+    position: absolute;
+    background-color: darkgoldenrod;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    display: flex;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    right: -7px;
+  }
+  /* header area start */
+  header {
+    background: rgb(5, 1, 74);
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .header-list {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background: transparent;
+    display: inline-block;
+  }
+  .header-list:hover {
+    background: green;
+  }
+  .profile-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  }
+  /* header area end */
+
+  /* footer area start */
+  footer {
+	color: white;
+}
+.upper-area {
+    background: rgb(5, 1, 74);
+    padding: 30px 0;
+    text-align: center;
+    background-image: url(../image/pattern-book.png);
+  }
+  .upper-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social-sec a i {
+    width: 20px;
+    height: 20px;
+  }
+  .social-sec a {
+    background: teal;
+    padding: 15px;
+    border-radius: 100%;
+  }
+  .social-sec a:hover {
+    background: gray;
+  }
+  /* footer area end */

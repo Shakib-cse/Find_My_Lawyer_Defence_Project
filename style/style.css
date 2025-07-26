@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  transition: 0.4s;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+li {
+  list-style: none;
+}
+#clock {
+	position: absolute;
+	right: 15px;
+	top: 25px;
+	font-size: 22px;
+	font-weight: bold;
+}
+/* header area start */
+header {
+  background: rgb(5, 1, 74);
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.header-menu-item li a {
+  padding: 10px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.header-menu-item li a:hover {
+  background: green;
+}
+/* header area end */
+
+/* search area start */
+#hero-area{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  min-width: 100%;
+}
+.slide {
+  min-width: 100%;
+}
+.slide img {
+	width: 100%;
+	height: 100vh;
+  position: absolute;
+}
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.hero-item {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  gap: 30px;
+  justify-content: center;
+  height: 100vh;
+}
+.animation-item {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  border-radius: 20px;
+  background: black;
+  padding: 20px;
+}
+.search-item {
+  padding: 40px;
+  text-align: center;
+}
+.search-item form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.search-item-all {
+  width: 100%;
+}
+.search-item-all label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.search-item-all select {
+  width: 100%;
+  text-align: center;
+  background: darkgray;
+  border: none;
+  padding: 7px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.search-item {
+  background: rgb(5, 1, 74);
+  border-radius: 20px;
+  opacity: 0.7;
+}
+@keyframes scale {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.all-btn {
+  padding: 10px;
+  background: green;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.search-cross {
+  display: block;
+  text-align: right;
+}
+.cross {
+  font-size: 18px;
+  cursor: pointer;
+  color: yellow;
+}
+.cross:hover {
+  color: red;
+}
+/* search area end */
+
+/* lawyer list area start */
+.lawyer-list-area {
+  padding: 30px 0;
+  background: whitesmoke;
+  background-image: url(../image/counter-bg.png);
+  background: linear-gradient(rgba(213, 208, 208, 0.7), rgba(0, 0, 0, 0.7));
+}
+.lawyer-img {
+  width: 100%;
+  height: 20rem;
+}
+.lawyer-card {
+  padding: 10px;
+  background: rgb(5, 1, 74);
+  overflow: hidden;
+}
+.lawyer-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+/* lawyer list area end */
+
+/* lawyer division start */
+.division-name-area {
+  background: rgb(5, 1, 74);
+  padding: 30px 0;
+  background-image: url(../image/pattern-book.png);
+  background-position: center center;
+}
+.division-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.capital {
+  background: grey;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.capital:hover {
+  background: green;
+  color: red;
+}
+/* lawyer division area end */
+
+/* suggestion area start */
+.suggestion-area {
+  padding: 30px 0;
+  text-align: center;
+  background-image: url(../image/counter-bg.png);
+  object-fit: cover;
+  background-position: center center;
+}
+.suggestion-form {
+  margin-bottom: 15px;
+}
+.suggestion-form label {
+  color: black;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 3px;
+}
+.sec {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 20px;
+}
+.sec-2 img {
+  width: 100%;
+  height: 400px;
+}
+.suggestion-form input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background: darkgray;
+  font-size: 18px;
+  color: black;
+  padding: 0 20px;
+}
+.suggestion-form textarea {
+  width: 100%;
+  background: darkgray;
+  border: none;
+  font-size: 16px;
+  color: black;
+  height: 200px;
+  padding: 5px 20px;
+  border-radius: 5px;
+  resize: none;
+}
+.suggestion-form input:focus,
+.suggestion-form textarea:focus {
+  outline: none;
+}
+/* suggestion area end */
+
+/* footer area start */
+.upper-area {
+  background: rgb(5, 1, 74);
+  padding: 30px 0;
+  text-align: center;
+  background-image: url(../image/pattern-book.png);
+}
+.upper-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.social-sec a i {
+  width: 20px;
+  height: 20px;
+}
+.social-sec a {
+  background: teal;
+  padding: 15px;
+  border-radius: 100%;
+}
+.social-sec a:hover {
+  background: gray;
+}
+/* footer area end */

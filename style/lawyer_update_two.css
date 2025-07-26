@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: whitesmoke;
+  }
+  li {
+    list-style: none;
+  }
+  
+  /* header area start */
+  header {
+    background: rgb(5, 1, 74);
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .header-list {
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background: transparent;
+    display: inline-block;
+  }
+  .header-list:hover {
+    background: green;
+  }
+  .profile-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+  }
+  /* header area end */
+  
+  
+  .update-area {
+      padding-top: 150px;
+      padding-bottom: 100px;
+      background: wheat;
+  }
+  input{
+      outline: none;
+  }
+  
+  /* footer area start */
+  .upper-area {
+    background: rgb(5, 1, 74);
+    padding: 30px 0;
+    text-align: center;
+    background-image: url(../image/pattern-book.png);
+  }
+  .upper-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .social-sec a i {
+    width: 20px;
+    height: 20px;
+  }
+  .social-sec a {
+    background: teal;
+    padding: 15px;
+    border-radius: 100%;
+  }
+  .social-sec a:hover {
+    background: gray;
+  }
+  /* footer area end */
+  
